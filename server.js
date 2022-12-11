@@ -11,7 +11,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-const port = 8082;
+const port = process.env.PORT || 8082;
 const db = process.env.MONGODB_URI;
 
 mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })

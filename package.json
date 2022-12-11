@@ -16,6 +16,8 @@
     "pm2": "^4.5.4"
   },
   "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
     "server": "nodemon server.js",
     "client": "cd client && npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\""
