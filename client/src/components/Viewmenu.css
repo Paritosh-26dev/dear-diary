@@ -1,0 +1,29 @@
+.menu-item {
+    background-color: rgb(149, 194, 206);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 90px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.menu-title {
+    color: black;
+    font-size: 26px;
+}
+
+.menu-date {
+    color: black;
+    font-size: 14px;
+}
+
+.navlink-menu {
+    text-decoration: none;
+}
+
+.navlink-menu:hover {
+    text-decoration: none;
+}

@@ -1,0 +1,25 @@
+.viewentry {
+    margin-right: 450px;
+    border-radius: 10px;
+    color: rgb(26, 1, 1);
+    margin-left: 70px;
+    margin-top: 70px;
+    padding-left: 40px;
+    padding-top: 40px;
+    background-color: rgb(149, 194, 206);
+    padding-right: 60px;
+    padding-bottom: 70px;
+}
+.view-title {
+    font-size: 35px;
+    color: rgb(10, 32, 73);
+}
+
+.view-date {
+    font-size: 15px;
+    color: rgb(6, 92, 83);
+}
+.view-data {
+    margin-top: 50px;
+    font-size: 20px;
+}
