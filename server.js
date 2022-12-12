@@ -19,16 +19,11 @@ mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected.....'))
     .catch(err => console.log(err));
 
-// app.get('/', function(req, res) {
-//     res.send('Hello World!')
-// });
-
-
 app.use('/', login);
 app.use('/', diary);
 
 app.use(express.static(path.join(__dirname, "./client/build")));
-app.get("*", function (_, res) {
+app.get("/", function (req, res) {
   res.sendFile(
     path.join(__dirname, "./client/build/index.html"),
     function (err) {
