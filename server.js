@@ -23,9 +23,9 @@ app.use('/', login);
 app.use('/', diary);
 
 app.use(express.static(path.join(__dirname, "./client/build")));
-app.get("/", function (req, res) {
+app.get("*", function (req, res) {
   res.sendFile(
-    path.join(__dirname, "./client/build/index.html"),
+    path.join(__dirname, 'build', 'index.html'),
     function (err) {
       res.status(500).send(err);
     }
